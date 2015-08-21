@@ -54,7 +54,7 @@ public class MainActivity extends Activity {
 	public void install(View view){
 		
 		Intent intent = new Intent(Intent.ACTION_VIEW);
-	    intent.setDataAndType(Uri.fromFile(new File(Environment.getExternalStorageDirectory() + "/sismobile/import/apk/" + "PrimeSF.apk")), "application/vnd.android.package-archive");
+	    intent.setDataAndType(Uri.fromFile(new File(Environment.getExternalStorageDirectory() + "/apk/" + "app.apk")), "application/vnd.android.package-archive");
 	    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 	    startActivity(intent);
 	}
